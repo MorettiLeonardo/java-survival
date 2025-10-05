@@ -7,7 +7,7 @@ public class Local {
 
     private String nome;
     private List<Recurso> recursos;
-    private Animal animal; // opcional
+    private Animal animal;
 
     public Local(String nome) {
         this.nome = nome;

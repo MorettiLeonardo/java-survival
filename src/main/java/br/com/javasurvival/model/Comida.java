@@ -2,8 +2,8 @@ package br.com.javasurvival.model;
 
 public class Comida extends Recurso {
 
-    private int restaurarFome;
-    private int restaurarEnergia;
+    protected int restaurarFome;
+    protected int restaurarEnergia;
 
     public Comida(String nome, int quantidade, int restaurarFome, int restaurarEnergia) {
         super(nome, quantidade, 0.2);

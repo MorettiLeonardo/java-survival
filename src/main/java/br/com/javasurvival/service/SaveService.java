@@ -14,9 +14,6 @@ public class SaveService {
 
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    /**
-     * Salva o estado atual do jogador no arquivo JSON.
-     */
     public void salvar(Jogador jogador) {
         try (FileWriter writer = new FileWriter(SAVE_PATH)) {
             gson.toJson(jogador, writer);
@@ -26,10 +23,6 @@ public class SaveService {
         }
     }
 
-    /**
-     * Carrega o jogador salvo a partir do arquivo JSON.
-     * Se o JSON for incompatível, inicia novo jogo.
-     */
     public Jogador carregar() {
         try (FileReader reader = new FileReader(SAVE_PATH)) {
             return gson.fromJson(reader, Jogador.class);
