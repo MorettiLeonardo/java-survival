@@ -59,8 +59,8 @@ public class SaveService {
             jogador.setVida(Integer.parseInt(dados.get("vida")));
             jogador.setEnergia(Integer.parseInt(dados.get("energia")));
             jogador.setFome(Integer.parseInt(dados.get("fome")));
-            jogador.ganharExperiencia(Integer.parseInt(dados.get("experiencia"))); // atualiza xp/nivel
-            jogador.aumentarDano(Integer.parseInt(dados.get("dano")) - 10); // volta o dano salvo
+            jogador.ganharExperiencia(Integer.parseInt(dados.get("experiencia")));
+            jogador.setDanoBase(Integer.parseInt(dados.get("dano")));
 
             // reconstrói inventário
             if (dados.containsKey("inventario")) {
