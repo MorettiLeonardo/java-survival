@@ -54,7 +54,7 @@ public class Jogador extends Personagem {
     public void usarItem(String nomeItem) throws ItemNaoEncontradoException {
         Recurso recurso = inventario.get(nomeItem);
         if (recurso == null) {
-            throw new ItemNaoEncontradoException("Item '" + nomeItem + "' não encontrado no inventário!");
+            throw new ItemNaoEncontradoException(nomeItem, this.nome);
         }
 
         recurso.usar(this);
