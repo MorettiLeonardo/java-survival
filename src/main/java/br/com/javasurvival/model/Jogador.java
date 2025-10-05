@@ -31,6 +31,10 @@ public class Jogador extends Personagem {
         return danoBase;
     }
 
+    public void setDanoBase(int danoBase) {
+        this.danoBase = danoBase;
+    }
+
     public void aumentarDano(int valor) {
         danoBase += valor;
         System.out.println("💪 Seu dano aumentou em " + valor + "! Dano atual: " + danoBase);
