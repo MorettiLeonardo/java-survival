@@ -17,9 +17,10 @@ public class ConsoleView {
                 2 - Descansar
                 3 - Usar item
                 4 - Ver inventário
-                5 - Salvar jogo
+                5 - Mostrar status
+                6 - Salvar jogo
                 0 - Sair
-                =====================
+                =======================
                 Escolha uma opção:
                 """);
     }

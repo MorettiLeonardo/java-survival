@@ -1,5 +1,9 @@
 package br.com.javasurvival.model;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Animal extends Personagem {
 
     private int dano;
@@ -27,6 +31,14 @@ public class Animal extends Personagem {
     public void atacar(Jogador jogador) {
         System.out.println("⚔️ " + tipo + " atacou " + jogador.getNome() + " causando " + dano + " de dano!");
         jogador.receberDano(dano);
+    }
+
+    public List<Recurso> gerarDrop() {
+        List<Recurso> drops = new ArrayList<>();
+
+        drops.add(new Carne(2));
+
+        return drops;
     }
 
     public String getTipo() {
