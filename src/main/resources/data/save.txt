@@ -1,0 +1,8 @@
+nome=leonardo moretti fertnadne snabarro
+vida=100
+energia=100
+fome=0
+nivel=1
+experiencia=0
+dano=20
+inventario=

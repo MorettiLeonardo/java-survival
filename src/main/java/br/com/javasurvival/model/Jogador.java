@@ -31,6 +31,10 @@ public class Jogador extends Personagem {
         return danoBase;
     }
 
+    public void setDanoBase(int danoBase) {
+        this.danoBase = danoBase;
+    }
+
     public void aumentarDano(int valor) {
         danoBase += valor;
         System.out.println("💪 Seu dano aumentou em " + valor + "! Dano atual: " + danoBase);
@@ -54,7 +58,7 @@ public class Jogador extends Personagem {
     public void usarItem(String nomeItem) throws ItemNaoEncontradoException {
         Recurso recurso = inventario.get(nomeItem);
         if (recurso == null) {
-            throw new ItemNaoEncontradoException("Item '" + nomeItem + "' não encontrado no inventário!");
+            throw new ItemNaoEncontradoException(nomeItem, this.nome);
         }
 
         recurso.usar(this);
