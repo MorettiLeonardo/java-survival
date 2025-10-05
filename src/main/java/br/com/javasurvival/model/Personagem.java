@@ -5,8 +5,9 @@ public abstract class Personagem {
     protected int vida;
     protected int energia;
     protected int fome;
-    protected final int VIDA_MAXIMA = 100;
-    protected final int ENERGIA_MAXIMA = 100;
+
+    protected int VIDA_MAXIMA = 100;
+    protected int ENERGIA_MAXIMA = 100;
     protected final int FOME_MAXIMA = 100;
 
     public Personagem(String nome) {
@@ -14,6 +15,11 @@ public abstract class Personagem {
         this.vida = VIDA_MAXIMA;
         this.energia = ENERGIA_MAXIMA;
         this.fome = 0;
+
+    }
+
+    public int getVidaMaxima() {
+        return this.VIDA_MAXIMA;
     }
 
     public abstract void agir();

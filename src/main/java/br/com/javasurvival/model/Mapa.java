@@ -1,5 +1,7 @@
 package br.com.javasurvival.model;
 
+import br.com.javasurvival.model.Animais.Lobo;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,8 +19,7 @@ public class Mapa {
         praia.adicionarRecurso(new Comida("Coco", 2, 15, 10));
 
         Local floresta = new Local("Floresta");
-        floresta.adicionarRecurso(new Madeira(3));
-        floresta.setAnimal(new Animal("Javali", 15));
+        floresta.setAnimal(new Lobo());
 
         Local montanha = new Local("Montanha");
         montanha.adicionarRecurso(new Pedra(4));
