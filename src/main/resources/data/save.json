@@ -1,0 +1,23 @@
+{
+  "inventario": {
+    "Pedra": {
+      "nome": "Pedra",
+      "quantidade": 4,
+      "peso": 0.8
+    },
+    "Coco": {
+      "restaurarFome": 15,
+      "restaurarEnergia": 10,
+      "nome": "Coco",
+      "quantidade": 1,
+      "peso": 0.2
+    }
+  },
+  "nome": "leo",
+  "vida": 85,
+  "energia": 60,
+  "fome": 35,
+  "VIDA_MAXIMA": 100,
+  "ENERGIA_MAXIMA": 100,
+  "FOME_MAXIMA": 100
+}
